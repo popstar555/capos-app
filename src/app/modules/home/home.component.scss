@@ -1,0 +1,21 @@
+.chart-wrapper{
+    display: block;
+}
+
+.table-wrapper{
+    th{
+        width: 50%;
+        flex: none;
+        font-size: 18px;
+        font-weight: normal;
+        max-width: 200px !important;
+    }
+
+    td{
+        width: 50%;
+        flex: none;
+        text-align: right;
+        max-width: 200px !important;
+
+    }
+}

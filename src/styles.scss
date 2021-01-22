@@ -175,8 +175,13 @@ p{
 .row{
     margin: 20px ;
 }
+
 .fill{
     width: 100%;
+}
+.flex{
+    width: auto;
+    flex: 1;
 }
 
 .text-left{
@@ -199,6 +204,24 @@ p{
         background: none;
         border: none;
         padding: 10px 0 2px;
+
+        .toolbar{
+            display: block;
+            float: left;
+            position: absolute;
+            top: 5px;
+            right: 3px;
+
+            ul{
+                display: inline-block;
+                margin: auto 2px 2px;
+
+                li{
+                    list-style: none;
+                    display: inline;
+                }
+            }
+        }
     }
 
     .card-body{
@@ -212,6 +235,35 @@ p{
         border: none;
         padding: 10px 0;
     }
+}
+
+select{
+    border: none;
+    border-radius: 16px;
+    background: #00c5ff;
+    color: #ffffff;
+    padding: 3px 8px;    
+    font-size: 18px;
+    text-align: center;
+
+    option, option:hover{
+        background: #8b8b8b;
+        border: none;
+        color: #ffffff;
+        padding: 3px 8px;    
+        font-size: 18px;
+        text-align: center;
+        border-radius: 16px;
+
+    }
+}
+
+select:focus,
+select:active,
+select:hover,
+select:focus-visible,
+select:focus-within{
+    border: none;
 }
 
 .breadcrumb{
@@ -283,3 +335,31 @@ ul.nav{
         }
     }
 }
+
+.light-green    { color: #98d87e !important }
+.light-red      { color: #e63950 !important }
+.light-blue     { color: #8ac9fe !important }
+.light-yellow   { color: #f9d765 !important }
+.light-aqua     { color: #32ddf9 !important }
+.light-default  { color: #c4c4c4 !important }
+
+.green    { color: #7ed63e !important }
+.red      { color: #c0272d !important }
+.blue     { color: #61a2f9 !important }
+.yellow   { color: #ffc502 !important }
+.aqua     { color: #32ddf9 !important }
+.default  { color: #8b8b8b !important }
+
+.light-green-bg    { background-color: #98d87e !important; color: #ffffff; }
+.light-red-bg      { background-color: #e63950 !important; color: #ffffff; }
+.light-blue-bg     { background-color: #8ac9fe !important; color: #ffffff; }
+.light-yellow-bg   { background-color: #f9d765 !important; color: #ffffff; }
+.light-aqua-bg     { background-color: #32ddf9 !important; color: #ffffff; }
+.light-default-bg  { background-color: #c4c4c4 !important; color: #ffffff; }
+
+.green-bg    { background-color: #7ed63e !important; color: #ffffff; }
+.red-bg      { background-color: #c0272d !important; color: #ffffff; }
+.blue-bg     { background-color: #61a2f9 !important; color: #ffffff; }
+.yellow-bg   { background-color: #ffc502 !important; color: #ffffff; }
+.aqua-bg     { background-color: #32ddf9 !important; color: #ffffff; }
+.default-bg  { background-color: #8b8b8b !important; color: #ffffff; }

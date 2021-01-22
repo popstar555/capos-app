@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISalesLedger } from 'src/app/models/sales-ledger';
+import { ISalesLedger } from '../../../models/sales-ledger';
 
 @Component({
   selector: 'app-sales-ledger',

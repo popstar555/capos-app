@@ -1,1 +1,128 @@
-<p>home works!</p>
+<div class="row">
+<div class="card fill">
+    <div class="card-header text-left">
+        <h2>Sales Report</h2>
+        <div class="toolbar">
+            <ul>
+                <li class="tool-item">
+                    <select [(ngModel)]="viewMode" (change)="changeViewMode()">
+                        <option value="monthly">Monthly</option>
+                        <option value="daily">Daily</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="chart-wrapper fill" style="display: block;">
+            <canvas baseChart height="60" [datasets]="lineChartData" [labels]="lineChartLabels"
+                [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
+                [chartType]="lineChartType" [plugins]="lineChartPlugins">
+            </canvas>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card row flex">
+            <div class="card-header text-left">
+                <h5>Sales Report</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="light-green-bg">Total by Month</th>
+                                <th class="light-red-bg">Total by Day</th>
+                            </tr>
+                            <tr>
+                                <td>{{totalByMonth}}</td>
+                                <td>{{totalByDay}}</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card row flex">
+            <div class="card-header text-left">
+                <h5>Stock Report</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="light-green-bg">Stock Levels</th>
+                                <th class="blue-bg">Stock on Hand</th>
+                            </tr>
+                            <tr>
+                                <td>{{stockLevels}}</td>
+                                <td>{{stockOnHand}}</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card row flex">
+            <div class="card-header text-left">
+                <h5>Products Report</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="light-blue-bg">Products Sales by User</th>
+                                <th class="yellow-bg">Products Sales by Customer</th>
+                            </tr>
+                            <tr>
+                                <td>{{productsByUser}}</td>
+                                <td>{{productsByCustomer}}</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="green-bg">Products Sales by Outlet</th>
+                                <th class="red-bg">Products Sales by Supplier</th>
+                            </tr>
+                            <tr>
+                                <td>{{productsByOutlet}}</td>
+                                <td>{{productsBySupplier}}</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="card row flex">
+            <div class="card-header text-left">
+                <h5>Register Report</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="light-aqua-bg">Register Closures</th>
+                                <td>{{registerClosures}}</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IPaymentSummary } from 'src/app/models/payment-summary';
+import { IPaymentSummary } from '../../../../models/payment-summary';
 
 @Component({
   selector: 'app-close',
