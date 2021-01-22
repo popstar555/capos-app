@@ -10,7 +10,10 @@ export class AdminLayoutComponent implements OnInit {
   userName: string;
   userAvatar: string;
   public cfgLeft: PerfectScrollbarConfigInterface = {};
-  public cfgMain: PerfectScrollbarConfigInterface = {};
+  public cfgMain: PerfectScrollbarConfigInterface = {
+    suppressScrollX: false,
+    suppressScrollY: false,
+  };
   
   constructor() {
     this.userName="Aleksandra";

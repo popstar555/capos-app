@@ -17,6 +17,10 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'ledger',
+    loadChildren: () => import('../../modules/sales-ledger/sales-ledger.module').then(m => m.SalesLedgerModule)
+  },
 
 ];
 

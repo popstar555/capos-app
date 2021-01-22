@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IPaymentSummary } from 'src/app/models/payment-summary';
 
 @Component({
   selector: 'app-close',
@@ -76,9 +77,3 @@ export class CloseComponent implements OnInit {
 }
 
 
-interface IPaymentSummary{
-  type: string;
-  expected: string;
-  counted: number;
-  differences: number;
-}

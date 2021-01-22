@@ -1,1 +1,29 @@
-<p>cash-manage works!</p>
+<div class="row">
+    <div class="fill text-right ctrl-bns">
+        <button class="btn md" (click)="removeCash()">Remove Cash</button>
+        <button class="btn md" (click)="addCash()">Add Cash</button>
+    </div>
+</div>
+<div class="row">
+    <div class="table-wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="date-col">Date</th>
+                    <th class="user-col">User</th>
+                    <th class="reasons-col">Reasons</th>
+                    <th class="transaction-col">Transaction($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of cashData">
+                    <td>{{row.date}}</td>
+                    <td>{{row.user}}</td>
+                    <td>{{row.reasons}}</td>
+                    <td>{{row.transaction}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

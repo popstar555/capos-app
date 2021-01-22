@@ -13,7 +13,7 @@ export class SidebarComponent implements OnInit {
       link: '/sell'
     },
     {
-      name: 'Sales ledger',
+      name: 'Sales Ledger',
       icon: 'sales-ledger',
       link: '/ledger'
     },

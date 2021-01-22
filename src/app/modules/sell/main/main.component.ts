@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ISellItem } from 'src/app/models/sell-item';
 
 @Component({
   selector: 'app-main',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  sellData=[
+  sellData:ISellItem[]=[
     {
       qyt: '',
       item: '',
