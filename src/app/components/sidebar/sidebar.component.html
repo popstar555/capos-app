@@ -1,0 +1,16 @@
+<ul class="menu-group">
+    <li class="menu-item" routerLinkActive="active">
+        <a routerLink="/home"><img class="menu-icon" src="assets/img/icon/home.png" /><span class="menu-caption">Home</span></a>
+    </li>
+</ul>
+
+<h2 class="menu-group-title">Features:</h2>
+
+<ul class="menu-group">
+    <li class="menu-item" routerLinkActive="active" *ngFor="let mi of menuList">
+        <a [routerLink]="mi.link">
+            <img class="menu-icon" src="assets/img/icon/{{mi.icon}}.png" />
+            <span class="menu-caption">{{mi.name}}</span>
+        </a>
+    </li>
+</ul>

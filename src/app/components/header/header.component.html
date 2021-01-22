@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Caros</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+                <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" routerLink="/help" target="_blank">Help</a>
+            </li>
+
+            <li class="nav-item">
+                <span class="user-avatar"><img [src]="userAvatar" /></span>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-item nav-link dropdown-toggle mr-md-2" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="user-name">{{userName}}</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item" routerLink="/user/profile">Profile</a>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" ((click)="logout()">Log out</button>
+              </div>
+            </li>
+          </ul>
+    </div>
+</nav>

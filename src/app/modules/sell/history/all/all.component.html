@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-sm-3">
+        <div class="form-group fill">
+            <label>
+                <h5>Status</h5>
+            </label>
+            <input type="text" class="form-control md" [(ngModel)]="status" required>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group fill">
+            <label>
+                <h5>Customers</h5>
+            </label>
+            <input type="text" class="form-control md" [(ngModel)]="customers" required>
+        </div>
+    </div>
+    <div class="col-sm-3 text-center">
+        <button class="btn md" (click)="search()" style="margin-top: 32px;">Search</button>
+    </div>
+</div>
+<div class="row">
+    <div class="table-wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="receipt-col">Receipt</th>
+                    <th class="customer-col">Customer</th>
+                    <th class="sold-by-col">Sold by</th>
+                    <th class="note-col">Note</th>
+                    <th class="sold-total-col">Sold Total</th>
+                    <th class="status-col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of saleData">
+                    <td>{{row.receipt}}</td>
+                    <td>{{row.customer}}</td>
+                    <td>{{row.soldBy}}</td>
+                    <td>{{row.note}}</td>
+                    <td>{{row.soldTotal}}</td>
+                    <td>{{row.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

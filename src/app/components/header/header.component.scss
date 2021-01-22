@@ -1,0 +1,22 @@
+.bg-dark {
+    background-color: #000000 !important;
+}
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f1b448;
+    display: block;
+    margin: 0 20px;
+    padding: 0;
+
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0;
+        border: none;
+        overflow: hidden;
+    }
+}

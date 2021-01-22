@@ -1,0 +1,34 @@
+ul.nav{
+    margin-top: 46px;
+}
+
+.receipt-col{
+    min-width: 50px;
+    max-width: 120px;
+    flex: 5;
+}
+
+.customer-col{
+    min-width: 40px;
+    max-width: 100px;
+    flex: 4;
+}
+.sold-by-col{
+    min-width: 40px;
+    max-width: 100px;
+    flex: 4;
+}
+.note-col{
+    flex: 1;
+}
+.sold-total-col{
+    min-width: 60px;
+    max-width: 100px;
+    flex: 3;
+}
+
+.status-col{
+    min-width: 50px;
+    max-width: 120px;
+    flex: 2;
+}

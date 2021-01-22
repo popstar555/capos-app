@@ -1,0 +1,34 @@
+<ul class="breadcrumb">
+    <li>Home</li>
+    <li class="active">Sell - Open</li>
+</ul>
+
+<div class="row">
+    <div class="card fill">
+        <div class="card-header text-center">
+            <h2>Register Open</h2>
+        </div>
+        <div class="card-body">
+            <p>Set an opening float to open the register and make a sale.</p>
+
+            <div class="form-group fill">
+                <label>
+                    <h3>Opening Float:</h3>
+                </label>
+                <input type="text" class="form-control md" [(ngModel)]="float" required>
+            </div>
+
+            <div class="form-group fill">
+                <label>
+                    <h3>Notes (Optional):</h3>
+                </label>
+                <textarea class="form-control md" [(ngModel)]="note"></textarea>
+            </div>
+
+            <p *ngIf="error">{{error}}</p>
+        </div>
+        <div class="card-footer text-center">
+            <button class="btn lg" (click)="openRegister()">Open Register</button>
+        </div>
+    </div>
+</div>

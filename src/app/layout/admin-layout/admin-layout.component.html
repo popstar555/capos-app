@@ -1,0 +1,16 @@
+<header>
+    <app-header [userName]="userName" [userAvatar]="userAvatar"></app-header>
+</header>
+<div class="wrapper">
+    <div class="sidebar">
+        <perfect-scrollbar class="sidebar-container" [config]="cfgLeft">
+            <app-sidebar></app-sidebar>
+        </perfect-scrollbar>
+    </div>
+    <div class="main-panel">
+        <perfect-scrollbar class="main-container" [config]="cfgMain">
+        <router-outlet></router-outlet>
+        </perfect-scrollbar>
+
+    </div>
+</div>

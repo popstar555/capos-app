@@ -1,0 +1,68 @@
+<ul class="breadcrumb">
+    <li>Home</li>
+    <li class="active">Sell - Close</li>
+</ul>
+
+<div class="row">
+    <div class="card fill">
+        <div class="card-header text-left">
+            <h3>Register Details</h3>
+        </div>
+        <div class="card-body">
+            <ul class="register-details">
+                <li class="display-field">
+                    <span class="label">Outlet</span>
+                    <span class="value">{{outlet}}</span>
+                </li>
+                <li class="display-field">
+                    <span class="label">Register</span>
+                    <span class="value">{{register}}</span>
+                </li>
+                <li class="display-field">
+                    <span class="label">Closure</span>
+                    <span class="value">{{closure}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card fill">
+            <div class="card-header text-left">
+                <h3>Payments Summary</h3>
+            </div>
+            <div class="card-body">
+                <p>Balance your register by entering the amount counted from the till and other payment terminals into the empty fields here.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="payment-col">Payment Type</th>
+                        <th class="expected-col">Expected</th>
+                        <th class="counted-col">Counted</th>
+                        <th class="differences-col">Differences</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of paymentData">
+                        <td>{{row.type}}</td>
+                        <td>{{row.expected}}</td>
+                        <td>{{row.counted}}</td>
+                        <td>{{row.differences}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul>
+            <li class="display-field">
+                <span class="label">Totals:</span>
+                <span class="value">{{calcTotal()}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

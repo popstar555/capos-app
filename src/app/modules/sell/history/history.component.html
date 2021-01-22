@@ -1,0 +1,8 @@
+<ul class="nav" role="tablist">
+    <li class="nav-item" role="presentation" *ngFor="let nav of navs">
+      <a class="nav-link" routerLinkActive="active"  id="nav.id" data-bs-toggle="tab" [routerLink]="nav.link" role="tab" aria-controls="all" aria-selected="true">{{nav.name}}</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <router-outlet></router-outlet>
+  </div>
