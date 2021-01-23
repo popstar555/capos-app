@@ -4,7 +4,13 @@
             <label>
                 <h5>Date From</h5>
             </label>
-            <input type="text" class="form-control md" [(ngModel)]="startDate" required>
+            <input 
+                [(ngModel)]="startDate" 
+                #dateFromDp="dpDayPicker"
+                [dpDayPicker]="cfgDatePicker1" 
+                [mode]="'day'"
+                class="form-control md"
+                theme="dp-material" />
         </div>
     </div>
     <div class="col-sm-3">
@@ -12,7 +18,13 @@
             <label>
                 <h5>Date To</h5>
             </label>
-            <input type="text" class="form-control md" [(ngModel)]="endDate" required>
+            <input 
+                [(ngModel)]="endDate" 
+                #dateFromDp="dpDayPicker"
+                [dpDayPicker]="cfgDatePicker2" 
+                [mode]="'day'"
+                class="form-control md"
+                theme="dp-material" />
         </div>
     </div>
     <div class="col-sm-3 text-center">

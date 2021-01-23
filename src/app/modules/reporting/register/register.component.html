@@ -1,0 +1,38 @@
+<div class="content">
+    <ul class="breadcrumb">
+        <li class="active">All Sales</li>
+    </ul>
+
+<div class="card fill">
+    <div class="card-body">
+        <div class="table-wrapper fill">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th >Register</th>
+                    <th >Time Opened</th>
+                    <th >Time Closed</th>
+                    <th >Stock Credit</th>
+                    <th style="font-size: 0.9em">Cash(Concealed Total)</th>
+                    <th >Cash</th>
+                    <th >Credit Card</th>
+                    <th >Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of registerData">
+                    <td>{{row.register}}</td>
+                    <td>{{row.timeOpened}}</td>
+                    <td>{{row.timeClosed}}</td>
+                    <td>{{row.storeCredit}}</td>
+                    <td>{{row.cashConcealed}}</td>
+                    <td>{{row.cash}}</td>
+                    <td>{{row.creditCard}}</td>
+                    <td>{{row.total}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+</div>

@@ -22,7 +22,6 @@ import { CashManageComponent } from './cash-manage/cash-manage.component';
     CommonModule,
     FormsModule,
     SellRoutingModule,
-
   ]
 })
 export class SellModule { }

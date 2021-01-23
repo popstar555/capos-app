@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SalesLedgerRoutingModule } from './sales-ledger-routing.module';
 import { SalesLedgerComponent } from './sales-ledger.component';
 import { FormsModule } from '@angular/forms';
+import { DpDatePickerModule } from 'ng2-date-picker';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    SalesLedgerRoutingModule
+    SalesLedgerRoutingModule,
+    DpDatePickerModule 
+
   ]
 })
 export class SalesLedgerModule { }

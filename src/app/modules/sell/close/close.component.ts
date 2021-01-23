@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IPaymentSummary } from '../../../../models/payment-summary';
+import { IPaymentSummary } from '../../../models/payment-summary';
 
 @Component({
   selector: 'app-close',
@@ -73,6 +73,11 @@ export class CloseComponent implements OnInit {
     console.log('calculating total...');
     
     return '100.00';
+  }
+
+  registerSell(){
+    //TODO: register sell
+    console.log('register sell...');
   }
 }
 

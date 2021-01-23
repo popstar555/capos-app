@@ -1,0 +1,12 @@
+<div class="sub-sidebar" style="margin-top: 297px">
+    <ul class="sub-menu-group" *ngIf="menuList">
+        <li class="menu-item" routerLinkActive="active" *ngFor="let mi of menuList">
+            <a [routerLink]="mi.link">
+                <span class="menu-caption">{{mi.name}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="sub-main-panel">
+    <router-outlet></router-outlet>
+</div>

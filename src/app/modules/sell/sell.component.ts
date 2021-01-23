@@ -24,8 +24,6 @@ export class SellComponent implements OnInit {
       link: 'cash'
     }    
   ];
-  position="50";
-  menuTitle="Main Register";
 
   constructor() { }
 

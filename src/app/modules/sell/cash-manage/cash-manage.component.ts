@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ICashItem } from '../../../../models/cash-item';
+import { ICashItem } from '../../../models/cash-item';
 
 @Component({
   selector: 'app-cash-manage',

@@ -1,0 +1,54 @@
+<div class="content">
+    <div class="table-wrapper summary">
+        <table class="table">
+            <tr>
+                <th class="no-bg no-border text-left">Total Value Issued</th>
+                <td>{{totalValueIssued}}</td>
+            </tr>
+            <tr>
+                <th class="no-bg no-border text-left">Total Value Redeemed</th>
+                <td>{{totalValueRedeemed}}</td>
+            </tr>
+            <tr>
+                <th class="no-bg no-border text-left">Outstanding Balance</th>
+                <td>{{outstandingBalance}}</td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <div class="card fill">
+        <div class="card-body">
+            <div class="btn-toolbar justify-content-between" role="toolbar">
+                <div class="btn-group" role="group" aria-label="First group">
+                </div>
+                <div>
+                    <label style="display: inline-block" class="col-4" ><h5>Search</h5></label>
+                    <input style="display: inline-block" type="text" class="form-control md col-8" [(ngModel)]="keyword" (change)="search()">
+                </div>
+              </div>
+    
+            <div class="table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th >Customer</th>
+                        <th >Total Issued</th>
+                        <th >Total Redeemed</th>
+                        <th >Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of creditData">
+                        <td>{{row.customer}}</td>
+                        <td>{{row.totalIssued}}</td>
+                        <td>{{row.totalRedeemed}}</td>
+                        <td>{{row.balance}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    </div>
+    

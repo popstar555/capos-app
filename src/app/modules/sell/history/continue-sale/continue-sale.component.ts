@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISaleItem } from '../../../../../models/sale-item';
+import { ISaleItem } from '../../../../models/sale-item';
 
 @Component({
   selector: 'app-continue-sale',

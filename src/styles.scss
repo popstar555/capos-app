@@ -110,6 +110,9 @@ input.form-control:focus{
     border: 1px solid #00cdff;
 }
 
+.inline{
+    display: inline-block;
+}
 .lg{
     padding: 12px;
     font-size: 32px;
@@ -153,7 +156,7 @@ p{
             border-radius: 16px;
             min-height: 32px;
             min-width: 40px;
-            padding: 6px 12px  !important;
+            padding: 6px 4px  !important;
         }
     
         th{
@@ -311,6 +314,12 @@ li.display-field{
     }
 }
 
+label{
+    white-space: nowrap !important;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 ul.nav{
     background: none;
 
@@ -363,3 +372,11 @@ ul.nav{
 .yellow-bg   { background-color: #ffc502 !important; color: #ffffff; }
 .aqua-bg     { background-color: #32ddf9 !important; color: #ffffff; }
 .default-bg  { background-color: #8b8b8b !important; color: #ffffff; }
+.no-bg     { background: none !important; color: #000000; }
+.no-border  { border: none !important; }
+
+.btn-toolbar{
+    button{
+        margin: 2px 5px;
+    }
+}

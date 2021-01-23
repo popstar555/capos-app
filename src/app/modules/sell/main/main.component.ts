@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISellItem } from '../../../../models/sell-item';
+import { ISellItem } from '../../../models/sell-item';
 
 @Component({
   selector: 'app-main',

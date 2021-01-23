@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISalesLedger } from '../../../models/sales-ledger';
+import { ISalesLedger } from '../../models/sales-ledger';
 
 @Component({
   selector: 'app-sales-ledger',
@@ -41,6 +41,13 @@ export class SalesLedgerComponent implements OnInit {
       total: 23.5
       },
     ];
+
+    cfgDatePicker1={
+        format: "YYYY-MM-DD",
+    };
+    cfgDatePicker2={
+      format: "YYYY-MM-DD",
+  };
 
   constructor() { }
 

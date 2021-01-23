@@ -1,0 +1,66 @@
+<div class="content">
+    <div class="card fill">
+        <div class="card-body">
+            <div class="btn-toolbar justify-content-between" role="toolbar">
+                <div role="group" aria-label="First group">
+                    <button type="button" class="btn md" (click)="addProduct()">Add New Product+</button>
+                </div>
+                <div>
+                    <button type="button" class="btn md" (click)="importData()">Import</button>
+                    <button type="button" class="btn md" (click)="exportData()">Export</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 form-group-inline d-flex">
+                <label class="inline text-right"><h4>Brand</h4></label>
+                <div class="flex-grow-1">
+                    <input type="text" class="md inline form-control" [(ngModel)]="brand" />
+                </div>
+            </div>
+            <div class="col-lg-4 form-group-inline d-flex">
+                <label class="inline text-right"><h4>Supplier</h4></label>
+                <div class="flex-grow-1">
+                    <input type="text" class="md inline form-control" [(ngModel)]="supplier" />
+                </div>
+            </div>
+            <div class="col-lg-4 form-group-inline d-flex">
+                <label class="inline text-right"><h4>Tags</h4></label>
+                <div class="flex-grow-1">
+                    <input type="text" class="md inline form-control" [(ngModel)]="tags" />
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="table-wrapper fill">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th >Name</th>
+                        <th >Image</th>
+                        <th >Created</th>
+                        <th >Tags</th>
+                        <th>Brand</th>
+                        <th >Varients</th>
+                        <th >Price</th>
+                        <th >Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of productData">
+                        <td>{{row.name}}</td>
+                        <td>{{row.image}}</td>
+                        <td>{{row.created}}</td>
+                        <td>{{row.tags}}</td>
+                        <td>{{row.brand}}</td>
+                        <td>{{row.variants}}</td>
+                        <td>{{row.price}}</td>
+                        <td>{{row.action}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+</div>
