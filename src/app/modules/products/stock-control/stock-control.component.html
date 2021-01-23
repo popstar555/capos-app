@@ -13,7 +13,7 @@
             <div class="col-lg-5 form-group-inline d-flex">
                 <label class="inline text-right"><h4>Please choose...</h4></label>
                 <div class="flex-grow-1">
-                    <input type="text" class="md inline form-control" [(ngModel)]="brand" />
+                    <input type="text" class="md inline form-control" [(ngModel)]="keyword" />
                 </div>
             </div>
             <div class="col">
@@ -26,25 +26,27 @@
                 <thead>
                     <tr>
                         <th >Name</th>
-                        <th >Image</th>
-                        <th >Created</th>
-                        <th >Tags</th>
-                        <th>Brand</th>
-                        <th >Varients</th>
-                        <th >Price</th>
-                        <th >Action</th>
+                        <th >Type</th>
+                        <th >Delivery Due</th>
+                        <th >Number</th>
+                        <th>Outlet</th>
+                        <th >Source</th>
+                        <th >Status</th>
+                        <th >Items</th>
+                        <th >Total Cost</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let row of productData">
+                    <tr *ngFor="let row of stockData">
                         <td>{{row.name}}</td>
-                        <td>{{row.image}}</td>
-                        <td>{{row.created}}</td>
-                        <td>{{row.tags}}</td>
-                        <td>{{row.brand}}</td>
-                        <td>{{row.variants}}</td>
-                        <td>{{row.price}}</td>
-                        <td>{{row.action}}</td>
+                        <td>{{row.type}}</td>
+                        <td>{{row.deliveryDue}}</td>
+                        <td>{{row.number}}</td>
+                        <td>{{row.outlet}}</td>
+                        <td>{{row.source}}</td>
+                        <td>{{row.status}}</td>
+                        <td>{{row.items}}</td>
+                        <td>{{row.totalCost}}</td>
                     </tr>
                 </tbody>
             </table>

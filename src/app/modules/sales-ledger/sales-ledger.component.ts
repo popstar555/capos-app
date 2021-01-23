@@ -47,7 +47,7 @@ export class SalesLedgerComponent implements OnInit {
     };
     cfgDatePicker2={
       format: "YYYY-MM-DD",
-  };
+    };
 
   constructor() { }
 
